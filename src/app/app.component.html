@@ -1,14 +1,24 @@
-<main class="main">
-  <div class="content">
-    <div class="left-side">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 982 239" fill="none" class="angular-logo">
-        <!-- SVG path data -->
-      </svg>
-      <h1>Hello, {{ title }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
-    </div>
-    
-  </div>
-</main>
+<app-header></app-header>
 
-<router-outlet />
+<main>
+  <ul id="users">
+    <li>
+      <app-user [avatar]="users[0].avatar" [name]="users[0].name" />
+    </li>
+    <li>
+      <app-user [avatar]="users[1].avatar" [name]="users[1].name" />
+    </li>
+    <li>
+      <app-user [avatar]="users[2].avatar" [name]="users[2].name" />
+    </li>
+    <li>
+      <app-user [avatar]="users[3].avatar" [name]="users[3].name" />
+    </li>
+    <li>
+      <app-user [avatar]="users[4].avatar" [name]="users[4].name" />
+    </li>
+    <li>
+      <app-user [avatar]="users[5].avatar" [name]="users[5].name" />
+    </li>
+  </ul>
+</main>
